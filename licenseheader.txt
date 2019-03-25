@@ -1,0 +1,13 @@
+﻿<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Copyright © ${date?date?string("yyyy")} N. Fichtner, N. Bäuerle, V. Neuhoff
+${licensePrefix}
+${licensePrefix}E-Mail: vincent.neuhoff@web.de
+${licensePrefix}Webseite: 
+${licensePrefix}
+${licensePrefix}Dieser Quellcode ist lizenziert unter einer
+${licensePrefix}Creative Commons Namensnennung 4.0 International Lizenz.
+<#if licenseLast??>
+${licenseLast}
+</#if>
