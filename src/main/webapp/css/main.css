@@ -38,8 +38,8 @@ body {
     padding:5px;
     
 }
-img{
-    max-width: 210px;
+p{
+    margin-bottom: 0px !important;
 }
 .card {
     margin-left:auto;
@@ -66,7 +66,7 @@ header, main {
 
 /* Titelzeile */
 #titlebar {
-    color: rgb(145, 204, 229);
+    color: #000;
     font-size: 200%;
     margin-bottom: 1rem;
 }
@@ -82,7 +82,8 @@ header, main {
 }
 
 #titlebar .appname {
-    color: rgb(83, 149, 176);
+    color: gray ;
+;
 }
 
 /* Menüzeile */
@@ -94,7 +95,7 @@ header, main {
 
 /* Farben für Links */
 a, a:visited {
-    color: rgb(193, 33, 33);
+    color: cornflowerblue;
     text-decoration: none;
 }
 
