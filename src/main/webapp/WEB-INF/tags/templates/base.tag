@@ -22,11 +22,14 @@
     <head>
         <meta charset="utf-8" />
 
-        <title>Aufgabenliste: ${title}</title>
+        <title>VS_Autoverwaltung ${title}</title>
         
         <!-- https://pixabay.com/de/flach-design-symbol-icon-www-2126884/ -->
         <link rel="shortcut icon" href="<c:url value="/img/favicon.png"/>">
-
+        
+        <link rel="stylesheet" href="<c:url value="../../css/bootstrap.min.css"/>" />         
+        <script src="<c:url value="../../js/bootstrap.min.js"/>"></script>
+        
         <link rel="stylesheet" href="<c:url value="/fontello/css/fontello.css"/>" />
         <link rel="stylesheet" href="<c:url value="/css/main.css"/>" />
         <link rel="stylesheet" href="<c:url value="/css/form.css"/>" />
@@ -39,7 +42,7 @@
             <%-- Titelzeile --%>
             <div id="titlebar">
                 <div class="appname">
-                    Aufgabenliste
+                    VS_Autoverwaltung
                 </div>
                 <div class="content">
                     ${title}

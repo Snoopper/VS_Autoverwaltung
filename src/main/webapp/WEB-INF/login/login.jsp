@@ -24,31 +24,40 @@
 
     <jsp:attribute name="menu">
         <div class="menuitem">
-            <a href="<c:url value="/signup/"/>">Registrieren</a>
+
         </div>
     </jsp:attribute>
 
     <jsp:attribute name="content">
         <div class="container">
             <form action="j_security_check" method="post" class="stacked">
-                <div class="column">
-                    <%-- Eingabefelder --%>
-                    <label for="j_username">
-                        Benutzername:
-                        <span class="required">*</span>
-                    </label>
-                    <input type="text" name="j_username">
-
-                    <label for="j_password">
-                        Passwort:
-                        <span class="required">*</span>
-                    </label>
-                    <input type="password" name="j_password">
-
-                    <%-- Button zum Abschicken --%>
-                    <button class="icon-login" type="submit">
-                        Einloggen
-                    </button>
+                <div class="card" style="width:400px">
+                    <div class="card-body">
+                        <%-- Eingabefelder --%>
+                        <label for="j_username">
+                            Benutzername:
+                            <span class="required">*</span>
+                        </label>
+                        <br>
+                        <input type="text" name="j_username">
+                        <br>
+                        <label for="j_password">
+                            Passwort:
+                            <span class="required">*</span>
+                        </label>
+                        <br>
+                        <input type="password" name="j_password">
+                        <br>
+                        <br>
+                        <%-- Button zum Abschicken --%>
+                        <button type="submit" class="btn btn-primary">Einloggen</button>
+                        <br>
+                        <br>
+                        <p>
+                            Noch keinen Account?
+                        </p>
+                        <a href="<c:url value="/signup/"/>">Hier registrieren</a>
+                    </div>
                 </div>
             </form>
         </div>
