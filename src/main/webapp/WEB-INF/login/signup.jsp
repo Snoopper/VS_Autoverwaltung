@@ -21,7 +21,7 @@
     </jsp:attribute>
 
     <jsp:attribute name="head">
-        <link rel="stylesheet" href="<c:url value="/css/main.css"/>" />
+        <link rel="stylesheet" href="<c:url value="/css/login.css"/>" />
     </jsp:attribute>
 
     <jsp:attribute name="menu">
@@ -33,7 +33,8 @@
     <jsp:attribute name="content">
         <div class="container">
             <form method="post" class="stacked">
-                <div class="column">
+                <div class="card" style="width:400px">
+                    <div class="card-body">  
                     <%-- CSRF-Token --%>
                     <input type="hidden" name="csrf_token" value="${csrf_token}">
 
@@ -61,12 +62,15 @@
                     <div class="side-by-side">
                         <input type="password" name="signup_password2" value="${signup_form.values["signup_password2"][0]}">
                     </div>
+                    <br>
 
                     <%-- Button zum Abschicken --%>
                     <div class="side-by-side">
-                        <button class="icon-pencil" type="submit">
+                        <button type="submit" class="btn btn-primary">
                             Registrieren
                         </button>
+                    </div>
+                </div>
                     </div>
                 </div>
 

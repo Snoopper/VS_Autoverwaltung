@@ -25,10 +25,10 @@
         <title>VS_Autoverwaltung ${title}</title>
         
         <!-- https://pixabay.com/de/flach-design-symbol-icon-www-2126884/ -->
-        <link rel="shortcut icon" href="<c:url value="/img/favicon.png"/>">
+        <link rel="shortcut icon" href="<c:url value="/img/favicon1.png"/>">
         
-        <link rel="stylesheet" href="<c:url value="../../css/bootstrap.min.css"/>" />         
-        <script src="<c:url value="../../js/bootstrap.min.js"/>"></script>
+        <link rel="stylesheet" href="<c:url value="/css/bootstrap.min.css"/>" />         
+        <script src="<c:url value="/js/bootstrap.min.js"/>"></script>
         
         <link rel="stylesheet" href="<c:url value="/fontello/css/fontello.css"/>" />
         <link rel="stylesheet" href="<c:url value="/css/main.css"/>" />
@@ -42,7 +42,7 @@
             <%-- Titelzeile --%>
             <div id="titlebar">
                 <div class="appname">
-                    <img src="../../img/logo.jpg" alt="VS_Autoverwaltung">
+                    <p>VS_Autverwaltung</p>
                 </div>
                 <div class="content">
                     ${title}
