@@ -42,7 +42,7 @@
             <input type="text" name="search_text" value="${param.search_text}" placeholder="Beschreibung"/>
 
             <select name="search_category">
-                <option value="">Alle Kategorien</option>
+                <option value="">Alle Marken</option>
 
                 <c:forEach items="${categories}" var="category">
                     <option value="${category.id}" ${param.search_category == category.id ? 'selected' : ''}>

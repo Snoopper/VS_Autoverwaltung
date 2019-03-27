@@ -31,11 +31,11 @@
 
     <jsp:attribute name="menu">
         <div class="menuitem">
-            <a href="<c:url value="/app/dashboard/"/>">Dashboard</a>
+            <a href="<c:url value="/app/dashboard/"/>">Übersicht</a>
         </div>
         
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/list/"/>">Liste</a>
+            <a href="<c:url value="/app/tasks/list/"/>">Alle Fahrzeuge</a>
         </div>
     </jsp:attribute>
 
@@ -51,10 +51,10 @@
                     <input type="text" name="task_owner" value="${task_form.values["task_owner"][0]}" readonly="readonly">
                 </div>
 
-                <label for="task_category">Kategorie:</label>
+                <label for="task_category">Marke:</label>
                 <div class="side-by-side">
                     <select name="task_category">
-                        <option value="">Keine Kategorie</option>
+                        <option value="">Keine Marke</option>
 
                         <c:forEach items="${categories}" var="category">
                             <option value="${category.id}" ${task_form.values["task_category"][0] == category.id.toString() ? 'selected' : ''}>
@@ -74,7 +74,7 @@
                 </div>
 
                 <label for="task_status">
-                    Status:
+                    Fahrzeugklasse:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side margin">
@@ -88,7 +88,7 @@
                 </div>
 
                 <label for="task_short_text">
-                    Bezeichnung:
+                    Modell:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side">
