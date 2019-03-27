@@ -13,6 +13,15 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+</script>
+
 <template:base>
     <jsp:attribute name="title">
         <c:choose>
@@ -33,7 +42,7 @@
         <div class="menuitem">
             <a href="<c:url value="/app/dashboard/"/>">Übersicht</a>
         </div>
-        
+
         <div class="menuitem">
             <a href="<c:url value="/app/tasks/list/"/>">Alle Fahrzeuge</a>
         </div>
@@ -65,12 +74,11 @@
                 </div>
 
                 <label for="task_due_date">
-                    Fällig am:
+                    TÜV fällig am:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side">
-                    <input type="text" name="task_due_date" value="${task_form.values["task_due_date"][0]}">
-                    <input type="text" name="task_due_time" value="${task_form.values["task_due_time"][0]}">
+                    <input type="text" name="task_due_date" id="datepicker" value="${task_form.values["task_due_date"][0]}">
                 </div>
 
                 <label for="task_status">
@@ -121,7 +129,7 @@
                 <ul class="errors">
                     <c:forEach items="${task_form.errors}" var="error">
                         <li>${error}</li>
-                    </c:forEach>
+                        </c:forEach>
                 </ul>
             </c:if>
         </form>

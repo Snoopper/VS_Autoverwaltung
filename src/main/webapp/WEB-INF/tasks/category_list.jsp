@@ -42,7 +42,7 @@
                 <label for="j_username">Neue Marke</label>
                 <input type="text" name="name" value="${categories_form.values["name"][0]}">
 
-                <button type="submit" name="action" value="create" class="icon-pencil">
+                <button type="submit" name="action" value="create">
                     Anlegen
                 </button>
             </div>
