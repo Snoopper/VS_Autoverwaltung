@@ -13,7 +13,7 @@ package dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.tasks.jpa;
  * Statuswerte einer Aufgabe.
  */
 public enum TaskStatus {
-    KOMBI, COUPE, CABRIO, STUFENHECK, LIMOSINE, VAN;
+    KOMBI, COUPE, CABRIO, STUFENHECK, LIMOSINE;
 
     /**
      * Bezeichnung ermitteln
@@ -32,8 +32,6 @@ public enum TaskStatus {
                 return "Stufenheck";
             case LIMOSINE:
                 return "Limosine";
-            case VAN:
-                return "Van";
             default:
                 return this.toString();
         }

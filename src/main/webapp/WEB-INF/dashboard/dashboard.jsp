@@ -24,7 +24,7 @@
 
     <jsp:attribute name="menu">
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/list/"/>">Liste</a>
+            <a href="<c:url value="/app/tasks/list/"/>">Alle Fahrzeuge</a>
         </div>
 
         <div class="menuitem">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/categories/"/>">Kategorien bearbeiten</a>
+            <a href="<c:url value="/app/tasks/categories/"/>">Marken bearbeiten</a>
         </div>
     </jsp:attribute>
 
@@ -40,7 +40,7 @@
         <c:choose>
             <c:when test="${empty sections}">
                 <p>
-                    Es wurden keine Dashboard-Kacheln gefunden. 🙈
+                    Es wurden keine Fahrzeuge gefunden.
                 </p>
             </c:when>
             <c:otherwise>
