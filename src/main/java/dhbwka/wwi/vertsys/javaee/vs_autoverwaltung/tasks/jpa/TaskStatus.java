@@ -13,7 +13,7 @@ package dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.tasks.jpa;
  * Statuswerte einer Aufgabe.
  */
 public enum TaskStatus {
-    OPEN, IN_PROGRESS, FINISHED, CANCELED, POSTPONED;
+    KOMBI, COUPE, CABRIO, STUFENHECK, LIMOSINE, VAN;
 
     /**
      * Bezeichnung ermitteln
@@ -22,16 +22,18 @@ public enum TaskStatus {
      */
     public String getLabel() {
         switch (this) {
-            case OPEN:
-                return "Offen";
-            case IN_PROGRESS:
-                return "In Bearbeitung";
-            case FINISHED:
-                return "Erledigt";
-            case CANCELED:
-                return "Abgebrochen";
-            case POSTPONED:
-                return "Zurückgestellt";
+            case KOMBI:
+                return "Kombi";
+            case COUPE:
+                return "Coupe";
+            case CABRIO:
+                return "Cabrio";
+            case STUFENHECK:
+                return "Stufenheck";
+            case LIMOSINE:
+                return "Limosine";
+            case VAN:
+                return "Van";
             default:
                 return this.toString();
         }

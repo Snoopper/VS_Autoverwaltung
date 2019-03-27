@@ -88,19 +88,19 @@ public class DashboardContent implements DashboardContentProvider {
             String icon = "";
 
             switch (status) {
-                case OPEN:
+                case KOMBI:
                     icon = "doc-text";
                     break;
-                case IN_PROGRESS:
+                case COUPE:
                     icon = "rocket";
                     break;
-                case FINISHED:
+                case CABRIO:
                     icon = "ok";
                     break;
-                case CANCELED:
+                case STUFENHECK:
                     icon = "cancel";
                     break;
-                case POSTPONED:
+                case LIMOSINE:
                     icon = "bell-off-empty";
                     break;
             }
