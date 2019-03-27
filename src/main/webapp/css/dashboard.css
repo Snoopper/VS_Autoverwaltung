@@ -81,7 +81,7 @@ Creative Commons Namensnennung 4.0 International Lizenz.
 }
 
 .tile.overview .content:hover {
-    background-color: darkgray;
+    background-color: #f0f0f0;
 }
 
 .tile.status-all .content {
@@ -90,5 +90,5 @@ Creative Commons Namensnennung 4.0 International Lizenz.
 }
 
 .tile.status-all .content:hover {
-    background-color: darkgray;
+    background-color: #f0f0f0;
 }

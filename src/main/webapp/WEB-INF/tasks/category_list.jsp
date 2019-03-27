@@ -34,15 +34,17 @@
 
     <jsp:attribute name="content">
         <form method="post" class="stacked">
+            
             <%-- CSRF-Token --%>
             <input type="hidden" name="csrf_token" value="${csrf_token}">
 
             <%-- Feld zum Anlegen einer neuen Kategorie --%>
-            <div class="column margin">
+            <div class="card" style="width:50%">
+                    <div class="card-body">
                 <label for="j_username">Neue Marke</label>
                 <input type="text" name="name" value="${categories_form.values["name"][0]}">
 
-                <button type="submit" name="action" value="create">
+                 <button class="btn btn-primary" type="submit" name="action" value="create">
                     Anlegen
                 </button>
             </div>
@@ -74,10 +76,11 @@
                                 <br />
                             </c:forEach>
                         </div>
-
-                        <button type="submit" name="action" value="delete" class="icon-trash">
+                        <br>
+                         <button class="btn btn-primary" type="submit" name="action" value="delete" class="icon-trash">
                             Markierte löschen
                         </button>
+                    </div>
                     </div>
                 </c:otherwise>
             </c:choose>

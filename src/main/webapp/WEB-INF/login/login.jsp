@@ -31,7 +31,7 @@
     <jsp:attribute name="content">
         <div class="container">
             <form action="j_security_check" method="post" class="stacked">
-                <div class="card" style="width:400px">
+                <div class="card" style="width:50%">
                     <div class="card-body">
                         <%-- Eingabefelder --%>
                         <label for="j_username">

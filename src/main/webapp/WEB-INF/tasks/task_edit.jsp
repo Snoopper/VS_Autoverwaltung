@@ -50,7 +50,8 @@
 
     <jsp:attribute name="content">
         <form method="post" class="stacked">
-            <div class="column">
+            <div class="card" style="width:50%">
+                    <div class="card-body">
                 <%-- CSRF-Token --%>
                 <input type="hidden" name="csrf_token" value="${csrf_token}">
 
@@ -111,17 +112,19 @@
                 </div>
 
                 <%-- Button zum Abschicken --%>
+                <br>
                 <div class="side-by-side">
-                    <button class="icon-pencil" type="submit" name="action" value="save">
+                     <button class="btn btn-primary" type="submit" name="action" value="save">
                         Sichern
                     </button>
 
                     <c:if test="${edit}">
-                        <button class="icon-trash" type="submit" name="action" value="delete">
+                        <button class="btn btn-primary" type="submit" name="action" value="delete">
                             Löschen
                         </button>
                     </c:if>
                 </div>
+            </div>
             </div>
 
             <%-- Fehlermeldungen --%>
