@@ -42,7 +42,7 @@
             <%-- Titelzeile --%>
             <div id="titlebar">
                 <div class="appname">
-                    VS_Autoverwaltung
+                    <img src="../../img/logo.jpg" alt="VS_Autoverwaltung">
                 </div>
                 <div class="content">
                     ${title}
