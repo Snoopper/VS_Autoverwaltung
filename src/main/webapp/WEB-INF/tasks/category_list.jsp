@@ -41,10 +41,10 @@
             <%-- Feld zum Anlegen einer neuen Kategorie --%>
             <div class="card" style="width:50%">
                     <div class="card-body">
-                <label for="j_username">Neue Marke</label>
+                <label for="j_username" style="display:block;">Neue Marke</label>
                 <input type="text" name="name" value="${categories_form.values["name"][0]}">
 
-                 <button class="btn btn-primary" type="submit" name="action" value="create">
+                 <button class="btn btn-primary" type="submit" name="action" value="create" style="display:block;margin-left: auto;margin-right: auto;margin-top:5px;">
                     Anlegen
                 </button>
             </div>
@@ -70,14 +70,14 @@
                         <div class="margin">
                             <c:forEach items="${categories}" var="category">
                                 <input type="checkbox" name="category" id="${'category-'.concat(category.id)}" value="${category.id}" />
-                                <label for="${'category-'.concat(category.id)}">
+                                <label for="${'category-'.concat(category.id)}" >
                                     <c:out value="${category.name}"/>
                                 </label>
                                 <br />
                             </c:forEach>
                         </div>
                         <br>
-                         <button class="btn btn-primary" type="submit" name="action" value="delete" class="icon-trash">
+                         <button class="btn btn-primary" type="submit" name="action" value="delete" class="icon-trash" style="margin-bottom: 10px;">
                             Markierte löschen
                         </button>
                     </div>

@@ -33,6 +33,7 @@
             <form action="j_security_check" method="post" class="stacked">
                 <div class="card" style="width:50%">
                     <div class="card-body">
+                        <div><i class="fas fa-user" style="font-size: 50px;padding:25px 30px 25px 30px;background: #eee;border-radius: 100%;"></i></div>
                         <%-- Eingabefelder --%>
                         <label for="j_username">
                             Benutzername:

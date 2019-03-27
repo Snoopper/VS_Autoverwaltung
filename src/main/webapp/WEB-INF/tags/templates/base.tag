@@ -25,10 +25,11 @@
         <title>VS_Autoverwaltung ${title}</title>
         
         <!-- https://pixabay.com/de/flach-design-symbol-icon-www-2126884/ -->
-        <link rel="shortcut icon" href="<c:url value="/img/favicon1.png"/>">
+        <link rel="shortcut icon" href="<c:url value="/img/favicon2.png"/>">
         
         <link rel="stylesheet" href="<c:url value="/css/bootstrap.min.css"/>" />         
         <script src="<c:url value="/js/bootstrap.min.js"/>"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
         
         <link rel="stylesheet" href="<c:url value="/fontello/css/fontello.css"/>" />
         <link rel="stylesheet" href="<c:url value="/css/main.css"/>" />

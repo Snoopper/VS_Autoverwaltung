@@ -68,7 +68,6 @@ header, main {
 #titlebar {
     color: #000;
     font-size: 200%;
-    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -85,6 +84,7 @@ header, main {
     color: gray ;
 ;
 }
+
 
 /* Menüzeile */
 #menubar .menuitem {

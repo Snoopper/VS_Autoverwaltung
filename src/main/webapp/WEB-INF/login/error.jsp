@@ -30,7 +30,7 @@
 
     <jsp:attribute name="content">
         <p>
-            Das hat leider nicht geklappt. 🐻
+        <h2>Bitte versuche es erneut</h2>
         </p>
     </jsp:attribute>
 </template:base>

@@ -14,6 +14,7 @@ Creative Commons Namensnennung 4.0 International Lizenz.
 
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+    border-radius: 15%;
 
     display: inline-block;
     box-sizing: border-box;
@@ -30,12 +31,14 @@ Creative Commons Namensnennung 4.0 International Lizenz.
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 15%;
 
     background-color: white;
     transition: background-color 0.25s;
 
     color: #606060;
     z-index: 1;
+    border-radius: 15%;
 }
 
 .tile .content:hover {
@@ -78,6 +81,7 @@ Creative Commons Namensnennung 4.0 International Lizenz.
 /* Besondere Kacheln */
 .tile.overview .content {
     background-color: lightblue;
+    border-radius: 15%;
 }
 
 .tile.overview .content:hover {
@@ -87,6 +91,7 @@ Creative Commons Namensnennung 4.0 International Lizenz.
 .tile.status-all .content {
     background-color: #f5f5f5;
     font-weight: bold;
+    border-radius: 15%;
 }
 
 .tile.status-all .content:hover {

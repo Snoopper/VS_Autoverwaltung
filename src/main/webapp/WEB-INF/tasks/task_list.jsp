@@ -61,7 +61,7 @@
                 </c:forEach>
             </select>
 
-            <button class="icon-search" type="submit">
+            <button class="btn btn-primary" type="submit" style="margin-left: 5px;">
                 Suchen
             </button>
         </form>
