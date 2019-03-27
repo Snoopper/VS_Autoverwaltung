@@ -6,7 +6,7 @@
     
     <persistence-unit-metadata>
         <persistence-unit-defaults>
-            <schema>VS_Autoverwaltung</schema>
+            <schema>VS_AUTOVERWALTUNG</schema>
         </persistence-unit-defaults>
     </persistence-unit-metadata>
     

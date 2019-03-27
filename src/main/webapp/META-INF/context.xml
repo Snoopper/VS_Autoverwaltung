@@ -10,8 +10,8 @@
         dataSourceName="Default-Database-Unmanaged"
         roleNameCol="groupname" userCredCol="password_hash"
         userNameCol="username"
-        userRoleTable="vs_autoverwaltung.jtodo_user_group"
-        userTable="vs_autoverwaltung.vs_autoverwaltung_user">
+        userRoleTable="VS_AUTOVERWALTUNG.vs_autoverwaltung_user_group"
+        userTable="VS_AUTOVERWALTUNG.vs_autoverwaltung_user">
       <CredentialHandler algorithm="SHA-256" className="org.apache.catalina.realm.MessageDigestCredentialHandler"/>
     </Realm>
   </Realm>
