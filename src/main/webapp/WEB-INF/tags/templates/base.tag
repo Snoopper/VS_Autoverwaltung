@@ -42,7 +42,7 @@
             <%-- Titelzeile --%>
             <div id="titlebar">
                 <div class="appname">
-                    <p>VS_Autverwaltung</p>
+                    <p>VS_Autoverwaltung</p>
                 </div>
                 <div class="content">
                     ${title}
