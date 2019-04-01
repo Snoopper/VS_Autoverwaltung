@@ -113,7 +113,6 @@ public class TaskEditServlet extends HttpServlet {
 
         String taskCategory = request.getParameter("task_category");
         String taskDueDate = request.getParameter("task_due_date");
-        String taskDueTime = request.getParameter("task_due_time");
         String taskStatus = request.getParameter("task_status");
         String taskShortText = request.getParameter("task_short_text");
         String taskLongText = request.getParameter("task_long_text");
@@ -128,19 +127,16 @@ public class TaskEditServlet extends HttpServlet {
             }
         }
 
-        Date dueDate = WebUtils.parseDate(taskDueDate);
-        Time dueTime = WebUtils.parseTime(taskDueTime);
+        Date dueDate = null;
+
+        if (taskDueDate != null) {
+            dueDate = WebUtils.parseDate(taskDueDate);
+        }
 
         if (dueDate != null) {
             task.setDueDate(dueDate);
         } else {
             errors.add("Das Datum muss dem Format dd.mm.yyyy entsprechen.");
-        }
-
-        if (dueTime != null) {
-            task.setDueTime(dueTime);
-        } else {
-            errors.add("Die Uhrzeit muss dem Format hh:mm:ss entsprechen.");
         }
 
         try {

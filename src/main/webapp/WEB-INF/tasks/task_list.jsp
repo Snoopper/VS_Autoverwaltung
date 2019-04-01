@@ -104,7 +104,7 @@
                             </td>
                             <td>
                                 <c:out value="${utils.formatDate(task.dueDate)}"/>
-                                <c:out value="${utils.formatTime(task.dueTime)}"/>
+                                
                             </td>
                         </tr>
                     </c:forEach>
