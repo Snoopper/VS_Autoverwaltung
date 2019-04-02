@@ -9,6 +9,7 @@
  */
 package dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.common.ejb;
 
+
 import dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.common.jpa.User;
 import javax.annotation.Resource;
 import javax.annotation.security.RolesAllowed;
@@ -41,15 +42,17 @@ public class UserBean {
     /**
      *
      * @param username
+     * @param vorname
+     * @param nachname
      * @param password
      * @throws UserBean.UserAlreadyExistsException
      */
-    public void signup(String username, String password) throws UserAlreadyExistsException {
+    public void signup(String username, String vorname, String nachname, String password) throws UserAlreadyExistsException {
         if (em.find(User.class, username) != null) {
             throw new UserAlreadyExistsException("Der Benutzername $B ist bereits vergeben.".replace("$B", username));
         }
 
-        User user = new User(username, password);
+        User user = new User(username, vorname, nachname, password);
         user.addToGroup("app-user");
         em.persist(user);
     }
