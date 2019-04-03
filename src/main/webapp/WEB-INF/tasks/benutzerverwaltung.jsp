@@ -29,30 +29,38 @@
     <jsp:attribute name="content">
         <form method="post" class="stacked">
             <div class="card" style="width:50%">
-                    <div class="card-body">
-                <%-- CSRF-Token --%>
-                <input type="hidden" name="csrf_token" value="${csrf_token}">
-                
-                <%-- Eingabefelder --%>
-                <label for="benutzername">Benutzername:</label>
-                <div class="side-by-side">
-                    <input type="text" name="benutzername" value="${benutzer.username}">
-                </div>
-                
-                <label for="vorname">Vorname:</label>
-                <div class="side-by-side">
-                    <input type="text" name="vorname" value="${benutzer.vorname}">
-                </div>
-                
-                <label for="nachname">Nachname:</label>
-                <div class="side-by-side">
-                    <input type="text" name="nachname" value="${benutzer.nachname}">
-                </div>
+                <div class="card-body">
+                    <%-- CSRF-Token --%>
+                    <input type="hidden" name="csrf_token" value="${csrf_token}">
 
-            </div>
+                    <%-- Eingabefelder --%>
+                    <label for="benutzername">Benutzername:</label>
+                    <div class="side-by-side">
+                        <input type="text" name="benutzername" value="${benutzer.username}">
+                    </div>
+
+                    <label for="vorname">Vorname:</label>
+                    <div class="side-by-side">
+                        <input type="text" name="vorname" value="${benutzer.vorname}">
+                    </div>
+
+                    <label for="nachname">Nachname:</label>
+                    <div class="side-by-side">
+                        <input type="text" name="nachname" value="${benutzer.nachname}">
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <%-- Button zum Sichern --%>
+                    <div class="side-by-side">
+                        <button type="submit" class="btn btn-primary">
+                            Sichern
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            
+
         </form>
     </jsp:attribute>
 </template:base>

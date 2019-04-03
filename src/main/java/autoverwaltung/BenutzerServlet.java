@@ -11,6 +11,7 @@ package autoverwaltung;
 
 import dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.common.ejb.UserBean;
 import dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.common.jpa.User;
+import dhbwka.wwi.vertsys.javaee.vs_autoverwaltung.common.web.WebUtils;
 import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -42,8 +43,12 @@ public class BenutzerServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        User benutzer = userBean.getCurrentUser();
         String vorname = request.getParameter("vorname");
-        String nachname = request.getParameter("vorname");
-        
+        String nachname = request.getParameter("nachname");
+        benutzer.setVorname(vorname);
+        benutzer.setNachname(nachname);
+        userBean.update(benutzer);
+        response.sendRedirect(WebUtils.appUrl(request, "/app/tasks/benutzerverwaltung/"));
     }
 }
