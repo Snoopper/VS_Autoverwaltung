@@ -17,6 +17,6 @@ In der Dashboard-Ansicht haben Sie ebenfalls die Möglichkeit ihr Profil zu ver�
 
 Autoren
 
-   Vincent Neuhof
-   Niklas Fichtner
-   Niklas Bäuerle
+Vincent Neuhof
+Niklas Fichtner
+Niklas Bäuerle
