@@ -33,7 +33,7 @@
     <jsp:attribute name="content">
         <div class="container">
             <form method="post" class="stacked">
-                <div class="card" style="width:400px">
+                <div class="card" style="width:50%">
                     <div class="card-body">  
                         <div><i class="fas fa-user-plus" style="font-size: 50px;padding:30px 20px 30px 30px;background: #eee;border-radius: 100%;"></i></div> 
                     <%-- CSRF-Token --%>
