@@ -100,7 +100,7 @@ public class DashboardContent implements DashboardContentProvider {
                 case STUFENHECK:
                     icon = "cancel";
                     break;
-                case LIMOSINE:
+                case LIMOUSINE:
                     icon = "bell-off-empty";
                     break;
             }
