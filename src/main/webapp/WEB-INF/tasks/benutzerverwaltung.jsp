@@ -36,7 +36,7 @@
                     <%-- Eingabefelder --%>
                     <label for="benutzername">Benutzername:</label>
                     <div class="side-by-side">
-                        <input type="text" name="benutzername" value="${benutzer.username}">
+                        <input type="text" name="benutzername" value="${benutzer.username}" readonly="readonly">
                     </div>
 
                     <label for="vorname">Vorname:</label>
