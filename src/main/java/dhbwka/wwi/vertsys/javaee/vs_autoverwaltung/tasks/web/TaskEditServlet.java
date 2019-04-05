@@ -112,11 +112,13 @@ public class TaskEditServlet extends HttpServlet {
         List<String> errors = new ArrayList<>();
 
         String taskCategory = request.getParameter("task_category");
-        String taskDueDate = request.getParameter("task_due_date");
+        String taskDueDate2 = request.getParameter("task_due_date");
         String taskStatus = request.getParameter("task_status");
         String taskShortText = request.getParameter("task_short_text");
         String taskLongText = request.getParameter("task_long_text");
-
+        
+        String taskDueDate = taskDueDate2.replace("/", ".");
+        
         Task task = this.getRequestedTask(request);
 
         if (taskCategory != null && !taskCategory.trim().isEmpty()) {
@@ -128,8 +130,9 @@ public class TaskEditServlet extends HttpServlet {
         }
 
         Date dueDate = null;
-
+        
         if (taskDueDate != null) {
+            
             dueDate = WebUtils.parseDate(taskDueDate);
         }
 
